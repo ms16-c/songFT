@@ -9,8 +9,7 @@
 #include<complex.h>
 #include<math.h>
 #pragma warning(disable : 4996)
-HWND hwnd;
-HDC hdc;
+
 int main(void){//f(주파수)=n일때 t의 값을 t1에서 t2(t 1개=0.1초(푸리에 변환을 위한 작은묶음)/t 변화량=샘플레이트)까지 올려가면서 t1부터 t2까지의 변환값의 실수부 구하기
     char samplename[100];
     char outputname[100];
