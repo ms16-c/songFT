@@ -14,13 +14,10 @@ HDC hdc;
 int main(void){//f(주파수)=n일때 t의 값을 t1에서 t2(t 1개=0.1초(푸리에 변환을 위한 작은묶음)/t 변화량=샘플레이트)까지 올려가면서 t1부터 t2까지의 변환값의 실수부 구하기
     char samplename[100];
     char outputname[100];
-    int samplerate=44100;
     double xcolumn=0.1;//x좌표/linecount/4410으로 증가
     int currentfrequency=20;//20-4000까지//y좌표축
     double t=0;//s단위
-    double deltat=t+0.000227;//4410deltat=0.1s
     double t1=t+0.1;
-    double sumbuffer=0;//e^-2iipift*g(t)의 실수부 계산값
     double integralsum=0;//t부터 t1까지의 적분 합
     double amplitude;
     int tgaesu=0;//단위함수 t의 개수
